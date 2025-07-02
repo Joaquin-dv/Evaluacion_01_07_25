@@ -121,7 +121,9 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     gap: 1em;
+    padding-bottom: 8em;
 }
 
 .boton{
@@ -145,12 +147,34 @@ main{
         cursor: pointer;
 }
 
+.boton-2{
+        color: white;
+        font-size: 1.2em;
+        background-color: var(--color-oferta-2);
+        border: none;
+        width: fit-content;
+        padding: .5em;
+        border-radius: .5em;
+}
+
+.boton-2:hover{
+        color: pink;
+        font-size: 1.2em;
+        background-color: rgb(128, 108, 108);
+        border: none;
+        width: fit-content;
+        padding: .5em;
+        border-radius: .5em;
+        cursor: pointer;
+}
+
 #gran-descuento{
     background-image: url("../img/pink_girl.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1em;
     width: 90%;
+    max-width: 600px;
     height: 12em;
 
     display: flex;
@@ -191,15 +215,34 @@ main{
     }
 }
 
+.color-1{
+    background-color: var(--color-oferta-1);
+}
+
+.color-2{
+    background-color: var(--color-oferta-2);
+}
+
 .deal{
     width: 90%;
+    max-width: 600px;
+    padding-top: .6em;
+    padding-bottom: .6em;
+
     color: white;
-    background-color: var(--color-oferta-1);
     border-radius: .5em;
     display: flex;
     align-items: center;
     justify-content: space-around;
 
+    .flex-col{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-row{
+        display: flex;
+        gap: .5em;
+    }
     h2{
         font-weight: 400;
     }
@@ -208,10 +251,7 @@ main{
     }
 }
 
-.deal div{
-    display: flex;
-    flex-direction: column;
-}
+
 
 .productos-container{
     width: 90%;
@@ -232,13 +272,17 @@ main{
     h3,h5{
         font-weight: 400;
     }
+    .precio{
+        display: flex;
+    }
     img{
         width: 100%;
         border-radius: 8px;
     }
 }
 
-.productos-container-second{
+
+.productos-container2{
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -246,28 +290,30 @@ main{
 
     overflow: auto hidden;
     scrollbar-width: none;
+
+    .producto-sm{
+        width: 50em;
+        
+        h5{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .precio{
+            display: flex;
+            font-size: .8em;
+        }
+
+        .descuento{
+            font-size: .7em;
+        }
+    }
 }
 
-.productos-container-second .producto-sm{
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 
-    h5{
-        font-weight: 300;
-    }
-    img{
-        width: 100%;
-        border-radius: 8px;
-    }
-    .precio{
-        font-size: .8em;
-    }
-    .descuento{
-        font-size: .7em;
-    }
-}
 
 .descuento{
     display: flex;
@@ -281,6 +327,7 @@ main{
 .precio-viejo{
     text-decoration: line-through;
     color: gray;
+    display: flex;
 }
 
 .puntuacion{
@@ -303,15 +350,18 @@ main{
 .ofertas-especiales{
     background-color: var(--bg-secundario);
     width: 90%;
+    max-width: 600px;
     height: fit-content;
     padding-top: .5em;
     padding-bottom: .5em;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap:1em;
 
     img{
         width: 6em;
+        border-radius: 50%;
     }
     div{
         width: 70%;
@@ -319,11 +369,89 @@ main{
 }
 
 .botas{
-    background-color: rgb(142, 177, 177);
+    background-color: var(--bg-secundario);
+    box-shadow: 51px -8px 9px -29px rgba(255,246,62,0.75) inset;
+-webkit-box-shadow: 51px -8px 9px -29px rgba(255,246,62,0.75) inset;
+-moz-box-shadow: 51px -8px 9px -29px rgba(255,246,62,0.75) inset;
     width: 90%;
+    max-width: 600px;
     height: 13em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .img-container{
+        padding-left: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 37%;
+        height: 100%;
+        img{
+            width: 100%;
+        }
+    }
+
+    .info-botas{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        h3{
+            font-size: 1.4em;
+            font-weight: 500;
+        }
+        h5{
+            font-size: 1em;
+            font-weight: 400;
+        }
+
+        gap: 1em;
+        .boton-2{
+            float: right;
+        }
+    }
 }
 
 nav{
-    
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding-top: .5em;
+    border-top: 1px solid rgb(216, 216, 216);
+
+    i{
+        font-size: 1.4em;
+    }
+
+    .left-nav, .right-nav{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            li{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: .5em;
+                padding: 1em;
+            }
+        }
+    }
+
+    #carrito{
+        position: absolute;
+        background-color: white;
+        top: 10px;
+        border-radius: 50%;
+        padding: .5em;
+    }
+
+    .active-option{
+        color: red;
+    }
 }
