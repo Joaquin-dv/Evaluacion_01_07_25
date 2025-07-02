@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Molengo&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --bg-primario: #FDFDFD;
+    --bg-secundario: #fff;
+
+    --color-oferta-1: #4392F9;
+    --color-oferta-2: #FD6E87;
+
+    --fuente: "Roboto";
+    --fuente-principal: .molengo-regular {
+                            font-family: "Molengo", sans-serif;
+                            font-weight: 400;
+                            font-style: normal;
+                        };
+
+}

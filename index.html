@@ -6,8 +6,255 @@
     <title>Prueba</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/fawesome-all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    first version
+    <header>
+        <div class="top">
+                <i class="fa-solid fa-bars"></i> 
+                <img src="./assets/img/logo.png" alt="Logo Stylish">
+                <img src="./assets/img/user.png" alt="Foto de Usuario" class="foto-user">  
+        </div>
+        <div id="buscador"> <i class="fa-solid fa-search" aria-hidden="true"></i> <input type="text" id="input" placeholder="Search any product.."> <i class="fa-solid fa-microphone" aria-hidden="true"></i> </div>
+        
+        <section id="categorias-container">
+            <div class="filtros">
+                <h2>All Featured</h2> 
+                <div>
+                    <ul>
+                        <li>Sort <i class="fa-solid fa-sort-amount-desc" aria-hidden="true"></i> </li>
+                        <li>Filter <i class="fa-solid fa-filter" aria-hidden="true"></i> </li>
+                    </ul>
+                </div> 
+            </div>
+
+            <div class="categorias">
+                <article>
+                    <img src="./assets/img/categorias/maquillaje.jpg" alt="">
+                    <p>Beauty</p>
+                </article>
+                <article>
+                    <img src="./assets/img/categorias/fashion.jpeg" alt="">
+                    <p>Fashion</p>
+                </article>
+                <article>
+                    <img src="./assets/img/categorias/kids.jpeg" alt="">
+                    <p>Kids</p>
+                </article>
+                <article>
+                    <img src="./assets/img/categorias/men.jpeg" alt="">
+                    <p>Mens</p>
+                </article>
+                <article>
+                    <img src="./assets/img/categorias/women.jpeg" alt="">
+                    <p>Womens</p>
+                </article>
+
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="gran-descuento">
+            <h3>50-40% OFF</h3>
+            <h5>Now in (product)</h5>
+            <h5>All colours</h5>
+            <button class="boton">Shop Now <i class="fa-solid fa-long-arrow-right" aria-hidden="true"></i></button>
+        </section>
+        <div class="pestañas">
+            <ul>
+                <li></li> <li class="pestaña-activa"></li> <li></li>
+            </ul>
+        </div>
+        
+        <div class="deal">
+            <div>
+                <h2>Deal of the Day</h2>
+                <div class="flex-row">
+                    <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                    <p>22h 55m 20s remaining</p>
+                </div>
+            </div>
+            <div>
+                <button class="boton">View all <i class="fa-solid fa-long-arrow-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+
+        <section class="productos-container">
+            <article>
+                <img src="./assets/img/categorias/kids.jpeg" alt="">
+                <h3>Women Printed Kurta</h3>
+                <h5>Neque porro quiscam est qui dolorem ipsum quia</h5>
+                <div class="precio"> <i class="fa-solid fa-jpy" aria-hidden="true"></i> 1500</div>
+                <div class="descuento"> 
+                    <div class="precio-viejo"><i class="fa-solid fa-jpy" aria-hidden="true"></i> 2499 </div>
+                    <h4>40%Off</h4>
+                </div>
+                <div class="puntuacion">
+                    <ul>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                    <h5>123432</h5>
+                </div>
+            </article>
+
+            <article>
+                <img src="./assets/img/categorias/kids.jpeg" alt="">
+                <h3>Women Printed Kurta</h3>
+                <h5>Neque porro quiscam est qui dolorem ipsum quia</h5>
+                <div class="precio"> <i class="fa-solid fa-jpy" aria-hidden="true"></i> 1500</div>
+                <div class="descuento"> 
+                    <div class="precio-viejo"><i class="fa-solid fa-jpy" aria-hidden="true"></i> 2499 </div>
+                    <h4>40%Off</h4>
+                </div>
+                <div class="puntuacion">
+                    <ul>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                    <h5>123432</h5>
+                </div>
+            </article>
+            
+            <article>
+                <img src="./assets/img/categorias/kids.jpeg" alt="">
+                <h3>Women Printed Kurta</h3>
+                <h5>Neque porro quiscam est qui dolorem ipsum quia</h5>
+                <div class="precio"> <i class="fa-solid fa-jpy" aria-hidden="true"></i> 1500</div>
+                <div class="descuento"> 
+                    <div class="precio-viejo"><i class="fa-solid fa-jpy" aria-hidden="true"></i> 2499 </div>
+                    <h4>40%Off</h4>
+                </div>
+                <div class="puntuacion">
+                    <ul>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                    <h5>123432</h5>
+                </div>
+            </article>
+
+            <article>
+                <img src="./assets/img/categorias/kids.jpeg" alt="">
+                <h3>Women Printed Kurta</h3>
+                <h5>Neque porro quiscam est qui dolorem ipsum quia</h5>
+                <div class="precio"> <i class="fa-solid fa-jpy" aria-hidden="true"></i> 1500</div>
+                <div class="descuento"> 
+                    <div class="precio-viejo"><i class="fa-solid fa-jpy" aria-hidden="true"></i> 2499 </div>
+                    <h4>40%Off</h4>
+                </div>
+                <div class="puntuacion">
+                    <ul>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                    <h5>123432</h5>
+                </div>
+            </article>
+
+        </section>
+
+        <article class="ofertas-especiales">
+            <img src="./assets/img/oferta_especial.jpg" alt="">
+            <div>
+                <h3>Special Offers😄</h3> 
+                <p>We make sure you get the offer you need at best prices</p>
+            </div>
+
+        </article>
+
+        <div class="botas"></div>
+
+        <div class="deal">
+            <div>
+                <h2>Trending Products</h2>
+                <div class="flex-row">
+                    <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                    <p>Last Date 29/02/22</p>
+                </div>
+            </div>
+            <div>
+                <button class="boton">View all <i class="fa-solid fa-long-arrow-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+
+        <section class="productos-container-second">
+            <article class="producto-sm">
+                <img src="./assets/img/categorias/kids.jpeg" alt="">
+                <h5>Neque porro quiscam est qui dolorem ipsum quia</h5>
+                <div class="precio"> <i class="fa-solid fa-jpy" aria-hidden="true"></i> 1500</div>
+                <div class="descuento"> 
+                    <div class="precio-viejo"><i class="fa-solid fa-jpy" aria-hidden="true"></i> 2499 </div>
+                    <h4>40%Off</h4>
+                </div>
+            </article>
+            <article class="producto-sm">
+                <img src="./assets/img/categorias/kids.jpeg" alt="">
+                <h5>Neque porro quiscam est qui dolorem ipsum quia</h5>
+                <div class="precio"> <i class="fa-solid fa-jpy" aria-hidden="true"></i> 1500</div>
+                <div class="descuento"> 
+                    <div class="precio-viejo"><i class="fa-solid fa-jpy" aria-hidden="true"></i> 2499 </div>
+                    <h4>40%Off</h4>
+                </div>
+            </article>
+            <article class="producto-sm">
+                <img src="./assets/img/categorias/kids.jpeg" alt="">
+                <h5>Neque porro quiscam est qui dolorem ipsum quia</h5>
+                <div class="precio"> <i class="fa-solid fa-jpy" aria-hidden="true"></i> 1500</div>
+                <div class="descuento"> 
+                    <div class="precio-viejo"><i class="fa-solid fa-jpy" aria-hidden="true"></i> 2499 </div>
+                    <h4>40%Off</h4>
+                </div>
+            </article>
+            <article class="producto-sm">
+                <img src="./assets/img/categorias/kids.jpeg" alt="">
+                <h5>Neque porro quiscam est qui dolorem ipsum quia</h5>
+                <div class="precio"> <i class="fa-solid fa-jpy" aria-hidden="true"></i> 1500</div>
+                <div class="descuento"> 
+                    <div class="precio-viejo"><i class="fa-solid fa-jpy" aria-hidden="true"></i> 2499 </div>
+                    <h4>40%Off</h4>
+                </div>
+            </article>
+            <article class="producto-sm">
+                <img src="./assets/img/categorias/kids.jpeg" alt="">
+                <h5>Neque porro quiscam est qui dolorem ipsum quia</h5>
+                <div class="precio"> <i class="fa-solid fa-jpy" aria-hidden="true"></i> 1500</div>
+                <div class="descuento"> 
+                    <div class="precio-viejo"><i class="fa-solid fa-jpy" aria-hidden="true"></i> 2499 </div>
+                    <h4>40%Off</h4>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <nav>
+        <div>
+            <ul>
+                <li><i class="fa-solid fa-home" aria-hidden="true"></i> <p>Home</p></li>
+            </ul>
+            <ul>
+                <li><i class="fa-solid fa-heart" aria-hidden="true"></i> <p>Home</p></li>
+            </ul>
+        </div>
+        <div id="carrito"></div>
+        <div>
+
+        </div>
+    </nav>
 </body>
 </html>

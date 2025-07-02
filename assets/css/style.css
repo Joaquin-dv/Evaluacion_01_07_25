@@ -1,5 +1,329 @@
+@import url("./variables.css");
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fuente);
+}
+
+ul{
+    list-style-type: none;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg-primario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+
+    .foto-user{
+        width: 3em;
+    }
+}
+
+#buscador{
+
+    width: 100%;
+    max-width: 800px;
+    height: 2.3em;
+
+    background-color: var(--bg-secundario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    .fa-solid{
+        color: gray;
+    }
+}
+
+#input{
+    width: 80%;
+    height: 100%;
+    border: none;
+}
+#input:active{
+    border: none;
+    border-color: white;
+}
+
+#categorias-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    width: 100%;
+    .filtros{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            display: flex;
+            gap: 1em;
+            li{
+                background-color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.categorias{
+    display: flex;
+    gap: 1em;
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 4em;
+            height: 4em;
+            border-radius: 50%;
+        }
+    }
+
+    overflow: auto hidden;
+    scrollbar-width: none;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.boton{
+        color: white;
+        font-size: 1.2em;
+        background-color: transparent;
+        border: 1.4px solid white;
+        width: fit-content;
+        padding: .5em;
+        border-radius: .5em;
+}
+
+.boton:hover{
+        color: black;
+        font-size: 1.2em;
+        background-color: white;
+        border: 1.4px solid white;
+        width: fit-content;
+        padding: .5em;
+        border-radius: .5em;
+        cursor: pointer;
+}
+
+#gran-descuento{
+    background-image: url("../img/pink_girl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    width: 90%;
+    height: 12em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .3em;
+
+    h3{
+        font-size: 1.6em;
+    }
+    h5{
+        font-weight: 400;
+    }
+
+    color: white;
+    padding-left: 1em;
+    
+    
+}
+
+.pestañas{
+    ul{
+        display: flex;
+        gap: .2em;
+        align-items: center;
+        li{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: rgb(128, 128, 128);
+        }
+
+        .pestaña-activa{
+            background-color: pink;
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+.deal{
+    width: 90%;
+    color: white;
+    background-color: var(--color-oferta-1);
+    border-radius: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    h2{
+        font-weight: 400;
+    }
+    p{
+        font-weight: 300;
+    }
+}
+
+.deal div{
+    display: flex;
+    flex-direction: column;
+}
+
+.productos-container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+    overflow: auto hidden;
+    scrollbar-width: none;
+}
+
+.productos-container article{
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h3,h5{
+        font-weight: 400;
+    }
+    img{
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+.productos-container-second{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+    overflow: auto hidden;
+    scrollbar-width: none;
+}
+
+.productos-container-second .producto-sm{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h5{
+        font-weight: 300;
+    }
+    img{
+        width: 100%;
+        border-radius: 8px;
+    }
+    .precio{
+        font-size: .8em;
+    }
+    .descuento{
+        font-size: .7em;
+    }
+}
+
+.descuento{
+    display: flex;
+    gap: .2em;
+    h4{
+        color: red;
+        font-weight: 300;
+    }
+}
+
+.precio-viejo{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.puntuacion{
+    display: flex;
+    align-items: center;
+    color: gray;
+    font-weight: 300;
+    gap: 8px;
+    ul{
+        display: flex;
+        align-items: center;
+        gap: .4em;
+        .fa-star{
+            color: yellow;
+            font-size: .7em;
+        }
+    }
+}
+
+.ofertas-especiales{
+    background-color: var(--bg-secundario);
+    width: 90%;
+    height: fit-content;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    display: flex;
+    align-items: center;
+    gap:1em;
+
+    img{
+        width: 6em;
+    }
+    div{
+        width: 70%;
+    }
+}
+
+.botas{
+    background-color: rgb(142, 177, 177);
+    width: 90%;
+    height: 13em;
+}
+
+nav{
+    
 }
